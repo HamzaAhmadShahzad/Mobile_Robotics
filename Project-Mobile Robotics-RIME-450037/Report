@@ -1,0 +1,6 @@
+mkdir -p ~/Project_450037/src/
+cd ~/Project_450037
+colcon build
+echo "source ~/Project_450037/install/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+ros2 launch Project_450037 wall_following.launch.py
